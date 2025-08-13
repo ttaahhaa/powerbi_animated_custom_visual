@@ -1,0 +1,22 @@
+{
+  "visual": {
+    "name": "animatedCallout",
+    "displayName": "Animated Callout",
+    "guid": "animatedCalloutF1D07C8B_visual",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Rounded banner with animated shimmer/marquee borders and animated label.",
+    "supportUrl": "https://example.com/support",
+    "gitHubUrl": "https://example.com/repo"
+  },
+  "apiVersion": "5.11.0",
+  "author": { "name": "Your Name", "email": "you@example.com" },
+  "assets": { "icon": "assets/icon.png", "thumbnail": "assets/icon-20.png" },
+  "externalJS": [],
+  "style": "src/styles/visual.less",
+  "capabilities": "capabilities.json",
+  "stringResources": [
+    "stringResources/en-US/resources.resjson"
+  ],
+  "supportsLaunchUrl": false
+}

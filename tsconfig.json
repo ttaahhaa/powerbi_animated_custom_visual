@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "declaration": false,
+    "sourceMap": true,
+    "outDir": "./.tmp/build",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "moduleResolution": "node",
+    "types": [
+      "powerbi-visuals-api",
+      "jasmine"
+    ],
+    "lib": ["es2017", "dom"]
+  },
+  "include": ["src/visual-minimal.ts", "src/settings-simple.ts", "test/**/*.ts"],
+  "exclude": ["src/visual.ts", "src/settings.ts"],
+  "files": ["src/visual-minimal.ts"]
+}

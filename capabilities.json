@@ -1,0 +1,197 @@
+{
+  "dataRoles": [
+    {
+      "name": "LabelText",
+      "kind": "Grouping",
+      "displayName": "Label Text"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "categories": {
+          "for": { "in": "LabelText" },
+          "dataReductionAlgorithm": { "top": {} }
+        }
+      },
+      "single": {
+        "role": "LabelText"
+      }
+    }
+  ],
+  "supportsHighlight": false,
+  "privileges": [],
+  "objects": {
+    "text": {
+      "displayName": "Text",
+      "properties": {
+        "content": { "displayName": "Custom text", "type": { "text": true } },
+        "fontFamily": { "displayName": "Font family", "type": { "formatting": { "fontFamily": true } } },
+        "fontSize": { "displayName": "Font size", "type": { "numeric": true } },
+        "fontWeight": { "displayName": "Font weight", "type": { "enumeration": [ { "value": "300", "displayName": "Light" }, { "value": "400", "displayName": "Normal" }, { "value": "500", "displayName": "Medium" }, { "value": "600", "displayName": "Semi Bold" }, { "value": "700", "displayName": "Bold" }, { "value": "800", "displayName": "Extra Bold" }, { "value": "900", "displayName": "Black" } ] } },
+        "textColor": { "displayName": "Text color", "type": { "fill": { "solid": { "color": true } } } },
+        "lineHeight": { "displayNameKey": "format_text_lineHeight", "type": { "numeric": true } },
+        "letterSpacing": { "displayNameKey": "format_text_letterSpacing", "type": { "numeric": true } },
+        "hAlign": { "displayNameKey": "format_text_halign", "type": { "enumeration": [ { "value": "left" }, { "value": "center" }, { "value": "right" } ] } },
+        "vAlign": { "displayNameKey": "format_text_valign", "type": { "enumeration": [ { "value": "top" }, { "value": "middle" }, { "value": "bottom" } ] } },
+        "rtlMode": { "displayNameKey": "format_text_rtl", "type": { "enumeration": [ { "value": "auto" }, { "value": "ltr" }, { "value": "rtl" } ] } },
+        "textShadow": { "displayNameKey": "format_text_shadow", "type": { "bool": true } },
+        "textShadowBlur": { "displayNameKey": "format_text_shadowBlur", "type": { "numeric": true } },
+        "textShadowOpacity": { "displayNameKey": "format_text_shadowOpacity", "type": { "numeric": true } },
+        "scrolling": { "displayNameKey": "format_text_scrolling", "type": { "bool": true } },
+        "scrollSpeed": { "displayNameKey": "format_text_scrollSpeed", "type": { "numeric": true } },
+        "scrollPauseOnHover": { "displayNameKey": "format_text_scrollPause", "type": { "bool": true } },
+        "scrollDirection": { "displayNameKey": "format_text_scrollDirection", "type": { "enumeration": [ { "value": "left" }, { "value": "right" }, { "value": "up" }, { "value": "down" } ] } }
+      }
+    },
+    "border": {
+      "displayName": "Border",
+      "properties": {
+        "style": { "displayName": "Border style", "type": { "enumeration": [ { "value": "none", "displayName": "None" }, { "value": "solid", "displayName": "Solid" }, { "value": "shimmer", "displayName": "Shimmer" }, { "value": "marquee", "displayName": "Marquee" }, { "value": "glow", "displayName": "Glow" }, { "value": "pulse", "displayName": "Pulse" }, { "value": "wave", "displayName": "Wave" }, { "value": "neon", "displayName": "Neon" }, { "value": "breathing", "displayName": "Breathing" }, { "value": "snake", "displayName": "Snake" } ] } },
+        "thickness": { "displayName": "Thickness", "type": { "numeric": true } },
+        "radius": { "displayName": "Corner radius", "type": { "numeric": true } },
+        "baseColor": { "displayName": "Base color", "type": { "fill": { "solid": { "color": true } } } },
+        "animationSpeed": { "displayName": "Animation speed", "type": { "numeric": true } },
+        "animationDirection": { "displayName": "Animation direction", "type": { "enumeration": [ { "value": "forward", "displayName": "Forward" }, { "value": "backward", "displayName": "Backward" }, { "value": "alternate", "displayName": "Alternate" } ] } },
+        "pulseIntensity": { "displayName": "Pulse intensity", "type": { "numeric": true } },
+        "dashLength": { "displayName": "Dash length", "type": { "numeric": true } },
+        "gapLength": { "displayName": "Gap length", "type": { "numeric": true } },
+        "glowIntensity": { "displayName": "Glow intensity", "type": { "numeric": true } },
+        "waveAmplitude": { "displayName": "Wave amplitude", "type": { "numeric": true } },
+        "snakeLength": { "displayName": "Snake length", "type": { "numeric": true } },
+        "tailFade": { "displayName": "Tail fade", "type": { "numeric": true } },
+        "gradientEnabled": { "displayNameKey": "format_border_gradientEnabled", "type": { "bool": true } },
+        "gradColor1": { "displayNameKey": "format_border_gradColor1", "type": { "fill": { "solid": { "color": true } } } },
+        "gradPos1": { "displayNameKey": "format_border_gradPos1", "type": { "numeric": true } },
+        "gradColor2": { "displayNameKey": "format_border_gradColor2", "type": { "fill": { "solid": { "color": true } } } },
+        "gradPos2": { "displayNameKey": "format_border_gradPos2", "type": { "numeric": true } },
+        "gradColor3": { "displayNameKey": "format_border_gradColor3", "type": { "fill": { "solid": { "color": true } } } },
+        "gradPos3": { "displayNameKey": "format_border_gradPos3", "type": { "numeric": true } },
+        "glowEnabled": { "displayNameKey": "format_border_glowEnabled", "type": { "bool": true } },
+        "glowColor": { "displayNameKey": "format_border_glowColor", "type": { "fill": { "solid": { "color": true } } } },
+        "glowIntensity": { "displayNameKey": "format_border_glowIntensity", "type": { "numeric": true } },
+        "marqueeSegment": { "displayNameKey": "format_border_marqueeSegment", "type": { "numeric": true } },
+        "marqueeGap": { "displayNameKey": "format_border_marqueeGap", "type": { "numeric": true } },
+        "marqueeSpeed": { "displayNameKey": "format_border_marqueeSpeed", "type": { "numeric": true } },
+        "marqueeDirection": { "displayNameKey": "format_border_marqueeDirection", "type": { "enumeration": [ { "value": "cw" }, { "value": "ccw" } ] } },
+        "shimmerWidth": { "displayNameKey": "format_border_shimmerWidth", "type": { "numeric": true } },
+        "shimmerAngle": { "displayNameKey": "format_border_shimmerAngle", "type": { "numeric": true } },
+        "shimmerDuration": { "displayNameKey": "format_border_shimmerDuration", "type": { "numeric": true } },
+        "shimmerIntensity": { "displayNameKey": "format_border_shimmerIntensity", "type": { "numeric": true } },
+        "accentEnabled": { "displayNameKey": "format_border_accentEnabled", "type": { "bool": true } },
+        "accentSide": { "displayNameKey": "format_border_accentSide", "type": { "enumeration": [ { "value": "left" }, { "value": "right" } ] } },
+        "accentWidth": { "displayNameKey": "format_border_accentWidth", "type": { "numeric": true } }
+      }
+    },
+    "background": {
+      "displayNameKey": "format_background",
+      "properties": {
+        "type": { "displayNameKey": "format_background_type", "type": { "enumeration": [ { "value": "none" }, { "value": "solid" }, { "value": "gradient" } ] } },
+        "solidColor": { "displayNameKey": "format_background_solidColor", "type": { "fill": { "solid": { "color": true } } } },
+        "gradColorA": { "displayNameKey": "format_background_gradA", "type": { "fill": { "solid": { "color": true } } } },
+        "gradColorB": { "displayNameKey": "format_background_gradB", "type": { "fill": { "solid": { "color": true } } } },
+        "gradAngle": { "displayNameKey": "format_background_gradAngle", "type": { "numeric": true } },
+        "opacity": { "displayNameKey": "format_background_opacity", "type": { "numeric": true } },
+        "paddingTop": { "displayNameKey": "format_background_pt", "type": { "numeric": true } },
+        "paddingRight": { "displayNameKey": "format_background_pr", "type": { "numeric": true } },
+        "paddingBottom": { "displayNameKey": "format_background_pb", "type": { "numeric": true } },
+        "paddingLeft": { "displayNameKey": "format_background_pl", "type": { "numeric": true } },
+        "shadow": { "displayNameKey": "format_background_shadow", "type": { "bool": true } },
+        "shadowX": { "displayNameKey": "format_background_shadowX", "type": { "numeric": true } },
+        "shadowY": { "displayNameKey": "format_background_shadowY", "type": { "numeric": true } },
+        "shadowBlur": { "displayNameKey": "format_background_shadowBlur", "type": { "numeric": true } },
+        "shadowSpread": { "displayNameKey": "format_background_shadowSpread", "type": { "numeric": true } },
+        "shadowOpacity": { "displayNameKey": "format_background_shadowOpacity", "type": { "numeric": true } }
+      }
+    },
+    "layout": {
+      "displayNameKey": "format_layout",
+      "properties": {
+        "minWidth": { "displayNameKey": "format_layout_minW", "type": { "numeric": true } },
+        "maxWidth": { "displayNameKey": "format_layout_maxW", "type": { "numeric": true } },
+        "minHeight": { "displayNameKey": "format_layout_minH", "type": { "numeric": true } },
+        "maxHeight": { "displayNameKey": "format_layout_maxH", "type": { "numeric": true } },
+        "textPadding": { "displayNameKey": "format_layout_textPadding", "type": { "numeric": true } },
+        "contentVAlign": { "displayNameKey": "format_layout_contentVAlign", "type": { "enumeration": [ { "value": "top" }, { "value": "middle" }, { "value": "bottom" } ] } }
+      }
+    },
+    "accessibility": {
+      "displayNameKey": "format_accessibility",
+      "properties": {
+        "ariaLive": { "displayNameKey": "format_accessibility_live", "type": { "enumeration": [ { "value": "off" }, { "value": "polite" }, { "value": "assertive" } ] } },
+        "ariaLabel": { "displayNameKey": "format_accessibility_label", "type": { "text": true } },
+        "focusOutline": { "displayNameKey": "format_accessibility_focus", "type": { "bool": true } }
+      }
+    },
+    "localization": {
+      "displayNameKey": "format_localization",
+      "properties": {
+        "localeOverride": { "displayNameKey": "format_localization_locale", "type": { "text": true } }
+      }
+    },
+    "advanced": {
+      "displayNameKey": "format_advanced",
+      "properties": {
+        "performanceMode": { "displayNameKey": "format_advanced_perf", "type": { "bool": true } },
+        "animationEnabled": { "displayNameKey": "format_advanced_anim", "type": { "bool": true } },
+        "frameLimiterMs": { "displayNameKey": "format_advanced_framelimit", "type": { "numeric": true } }
+      }
+    },
+    "background": {
+      "displayName": "Background",
+      "properties": {
+        "type": {
+          "displayName": "Background type",
+          "type": {
+            "enumeration": [
+              {
+                "value": "gradient",
+                "displayName": "Gradient"
+              },
+              {
+                "value": "solid",
+                "displayName": "Solid Color"
+              }
+            ]
+          }
+        },
+        "gradientAngle": {
+          "displayName": "Gradient angle",
+          "type": {
+            "numeric": true
+          }
+        },
+        "color1": {
+          "displayName": "Gradient color 1",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color2": {
+          "displayName": "Gradient color 2",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "solidColor": {
+          "displayName": "Solid color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
